@@ -1,0 +1,110 @@
+.publications_page {
+  .publications_items {
+    height: auto;
+  }
+  .btn {
+    display: block;
+    margin: 40px auto;
+  }
+  .publications {
+    border-radius: 12px 12px 0px 0px;
+    margin-top: 125px;
+  }
+  .tab-content {
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    background: #e6e6f0;
+    border-radius: 12px;
+    width: max-content;
+    margin: 0 auto;
+    .nav-link {
+      border: none;
+      padding: 10px 30px 12px;
+      color: #323264;
+      font-size: 18px;
+      border: 3px solid #e6e6f0;
+      margin: 0;
+      line-height: 1;
+      border-radius: 12px !important;
+      &.active {
+        color: #323264 !important;
+        background: #ffffff !important;
+      }
+    }
+  }
+}
+
+.publications {
+  background: #f5f5fa;
+  padding: 40px 0 20px;
+  position: relative;
+}
+
+.publications_items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  height: 720px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.publications_items_shadow {
+  height: 200px;
+  width: 100%;
+  padding: 75px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
+  text-align: center;
+}
+
+.publication_item {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  display: inline-block;
+
+  img {
+    width: 100%;
+  }
+}
+
+.publication_item_content {
+  padding: 24px 19px 18px 13px;
+}
+
+.publication_item_title {
+  font-family: "TT-Medium";
+  color: #24a3ff;
+  line-height: 1.15;
+  font-size: 18px;
+}
+
+.publication_item_date {
+  font-size: 12px;
+  color: #b3b3ba;
+  font-family: "TT-Bold";
+  text-transform: uppercase;
+}
+
+.publication_item_text {
+  border-top: 4px solid #e6e6f0;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}

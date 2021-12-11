@@ -1,0 +1,66 @@
+.commerce {
+  padding: 167px 0 100px;
+  /* background: url(../img/services/bg_service_bg_2.svg) center center/cover
+    no-repeat; */
+  background: url(../img/commerce/commerce_bg.png) center top/cover no-repeat;
+  border-radius: 0px 0px 12px 12px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    background: url(../icons/services/services_shadow.svg) center top / 100%
+      no-repeat;
+    width: 100%;
+    height: 20px;
+  }
+}
+
+.commerce_wrapper {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.commerce_text {
+  font-size: 21px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.service_discription {
+  padding-top: 20px;
+  border-top: 4px solid #c4c4c4;
+  max-width: 1092px;
+  width: 100%;
+  margin: 80px auto 0;
+}
+
+.service_discription_title {
+  font-size: 24px;
+  font-family: "TT-Medium";
+  color: #fff;
+}
+
+.service_discription_list {
+  columns: 2;
+  gap: 52px;
+}
+
+.service_disrcription_text {
+  position: relative;
+  color: white;
+  padding: 0 0 0 9px;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: url(../icons/services/point_pink.svg) center center/contain
+      no-repeat;
+  }
+}

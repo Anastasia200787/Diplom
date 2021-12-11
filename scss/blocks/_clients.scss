@@ -1,0 +1,75 @@
+.clients {
+  padding-top: 36px;
+}
+.clients_title {
+  text-align: center;
+  font-size: 14px;
+  color: #323264;
+  text-transform: uppercase;
+  font-family: "TT-Bold";
+}
+
+.clients_items {
+  margin-top: 29px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.client_item {
+  height: 120px;
+  position: relative;
+}
+
+.client_item_logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hillel {
+  background-color: #1c4280;
+}
+.wanna {
+  background-color: #005d86;
+}
+
+.tapgerine {
+  background-color: #f48b30;
+}
+
+.look {
+  background-color: #9e4dc3;
+}
+
+.orangear {
+  background-color: #fd9339;
+}
+
+.addteligent {
+  background-color: #e2e2e4;
+}
+
+.clickky {
+  background: #c71c36;
+}
+
+.eco {
+  background: #dcf3f9;
+}
+
+.infra {
+  background: #eaeaea;
+}
+
+.citypark {
+  background: #282240;
+}
+
+.artprint {
+  background: #1d4568;
+}
+
+.ultimate {
+  background: #000000;
+}

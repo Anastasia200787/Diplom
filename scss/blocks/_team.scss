@@ -1,0 +1,143 @@
+.team {
+  padding-top: 40px;
+  margin-top: 104px;
+}
+
+.team_slide {
+  display: flex;
+  border-radius: 12px;
+  background: #ededf7;
+}
+.team_caption {
+  font-size: 14px;
+  font-family: "TT-Bold";
+  color: #24a3ff;
+  text-transform: uppercase;
+  img {
+    margin-left: 5px;
+  }
+}
+
+.team_slide_content {
+  padding: 40px;
+}
+
+.team_slide_name {
+  color: #b3b3ba;
+}
+
+.team_slide_img {
+  width: 33%;
+}
+
+.team_slide_position {
+  font-size: 16px;
+  color: #b3b3ba;
+}
+
+.team-page {
+  .team {
+    padding: 80px 0 60px;
+    .title {
+      max-width: 865px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .team_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+  .team_item {
+    text-decoration: none;
+    img {
+      width: 100%;
+    }
+  }
+  .team_item_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .team_item_name {
+    color: #323264;
+    font-family: "TT-Medium";
+    margin: 20px 0 5px;
+  }
+
+  .team_item_position {
+    color: #b3b3ba;
+    font-size: 16px;
+  }
+  .team_item_link {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: #f5f5fa;
+    border-radius: 50%;
+    display: inline-block;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 7px !important;
+      height: 23px;
+    }
+  }
+}
+
+.team-member-page {
+  .member {
+    padding: 80px 0;
+    margin-top: 104px;
+  }
+
+  .member_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 41px;
+  }
+
+  .member_img {
+    max-width: 413px;
+    width: 100%;
+  }
+
+  .member_content {
+    max-width: 641px;
+    width: 100%;
+  }
+
+  .member_info {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    border-bottom: 4px solid #e6e6f0;
+    padding: 10px 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .member_position {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #b3b3ba;
+  }
+  .member_social {
+    text-decoration: none;
+    font-size: 16px;
+    color: #24a3ff;
+  }
+
+  .member_title {
+    font-size: 14px;
+    color: #323264;
+    font-family: "TT-Bold";
+    text-transform: uppercase;
+  }
+}

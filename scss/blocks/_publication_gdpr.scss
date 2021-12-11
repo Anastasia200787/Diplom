@@ -1,0 +1,79 @@
+.publication_gdpr {
+  .publications {
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+.publication {
+  padding: 60px 0;
+  margin-top: 104px;
+  .container {
+    max-width: 900px;
+  }
+}
+
+.publication_img {
+  width: 100%;
+}
+.publication_title {
+  font-size: 32px;
+  color: #323264;
+  font-family: "TT-Medium";
+  margin-top: 40px;
+}
+
+.publication_subtitle {
+  font-size: 24px;
+  color: #46466e;
+  font-family: "TT-Medium";
+  margin: 30px 0 20px;
+}
+
+.publication_content {
+  border-top: 4px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.publication_list_item {
+  margin-bottom: 15px;
+  padding-left: 7px;
+  &::marker {
+    color: #f0145a;
+    font-family: "TT-Bold";
+  }
+}
+.publication_content_img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 71%;
+}
+
+.publication_img_descr {
+  text-align: center;
+  font-size: 16px;
+  color: #b3b3ba;
+}
+
+.publication_social {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.publication_social_item {
+  background: #f5f5fa;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.social_link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

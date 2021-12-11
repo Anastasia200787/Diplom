@@ -1,0 +1,185 @@
+.header {
+  background: linear-gradient( 
+    123.01deg, #323264 20.33%, #323264 25.39%, #7a425e 88.53%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 34px;
+  z-index: 99;
+  width: 100%;
+  &_white {
+    background: white;
+    .breadcrumbs a {
+      color: #323264;
+    }
+    .header_lang {
+      a {
+        color: #b3b3ba;
+      }
+    }
+    .header_address {
+      color: #b3b3ba;
+    }
+    .header_tel {
+      color: #b3b3ba;
+    }
+    .menu_link {
+      color: #24a3ff;
+      &:hover {
+        color: #24a3ff;
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  img {
+    width: 100%;
+  }
+}
+
+.breadcrumbs {
+  position: relative;
+  list-style: none;
+  padding: 0 45px 0 0;
+  display: flex;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 47px;
+    background: url(../icons/small_logo.svg) center center/contain no-repeat;
+  }
+  li {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 21px;
+      height: 47px;
+      background: url(../icons/slash.svg) center center/contain no-repeat;
+    }
+  }
+  a {
+    display: inline-block;
+    font-size: 38px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.header_lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  a {
+    font-size: 12px;
+    font-family: "TT-Bold";
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a.active {
+    background: #f0145a;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 6px;
+  }
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  &_mobile {
+    display: none;
+  }
+}
+
+.header_contacts {
+  display: flex;
+  justify-content: end;
+  gap: 21px;
+  align-items: center;
+}
+
+.header_address {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.header_tel {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "TT-Bold";
+  padding: 0 13px 0 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 6px;
+    height: 6px;
+    background: url(../icons/services/point_grey.svg) center center/contain
+      no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 6px;
+    height: 6px;
+    background: url(../icons/services/point_grey.svg) center center/contain
+      no-repeat;
+  }
+}
+.menu_item {
+  list-style: none;
+}
+
+.menu {
+  margin-top: 19px;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.menu_link {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  padding-bottom: 2px;
+  transition: 0.2s;
+  font-family: "TT-Medium";
+  &:hover {
+    border-bottom: 2px solid #f0145a;
+    color: #fff;
+  }
+  &.active {
+    border-bottom: 2px solid #f0145a;
+    color: #f0145a;
+  }
+}

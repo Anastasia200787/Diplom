@@ -1,0 +1,97 @@
+.footer {
+  background: #f5f5fa;
+ 
+}
+
+.footer_line {
+  height: 4px;
+  background: #e6e6f0;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0 40px;
+}
+
+.footer_location {
+  color: #323264;
+  font-size: 16px;
+  font-family: "TT-Medium";
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer_address {
+  margin: 0;
+}
+
+.footer_contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.footer_map {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  font-size: 12px;
+  color: #24a3ff;
+  font-family: "TT-Bold";
+  cursor: pointer;
+  padding-left: 11px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 6px;
+    height: 6px;
+    background: url(../icons/services/point_grey.svg) center center/contain
+      no-repeat;
+  }
+}
+
+.footer_tel {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "TT-Bold";
+  color: #46466e;
+  padding: 0 13px 0 13px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 6px;
+    height: 6px;
+    background: url(../icons/services/point_grey.svg) center center/contain
+      no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 6px;
+    height: 6px;
+    background: url(../icons/services/point_grey.svg) center center/contain
+      no-repeat;
+  }
+}
+
+.footer_mail {
+  text-decoration: none;
+}
+
+.footer_copy {
+  font-size: 16px;
+  margin: 0;
+  color: #b3b3ba;
+  font-family: "TT-Medium";
+}

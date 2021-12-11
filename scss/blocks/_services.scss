@@ -1,0 +1,132 @@
+.services-page {
+  .services {
+    padding: 190px 0 100px;
+  }
+}
+
+.services {
+  position: relative;
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+  padding: 80px 0 100px;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    background: url(../icons/services/services_shadow.svg) center top / 100%
+      no-repeat;
+    width: 100%;
+    height: 20px;
+  }
+  .nav-link.active {
+    background: linear-gradient(45deg, #f0145a 0%, #ef8080 100%) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    border-right: 4px solid #f0145a;
+  }
+}
+
+.services_tabs {
+  margin-bottom: 80px !important;
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.span_tabs {
+  display: none;
+}
+
+.nav-pills {
+  border-right: 4px solid #e6e6f0;
+}
+
+.nav-link {
+  color: #b3b3ba;
+  font-size: 42px;
+  font-family: "TT-Bold";
+  line-height: 1.2;
+  text-align: right;
+  background: none !important;
+  padding: 10px 40px 10px 0;
+  border-radius: 0 !important;
+  margin-right: -4px;
+  &:hover {
+    color: #b3b3ba;
+  }
+}
+
+.tab-content {
+  max-width: 600px;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.tab-pane_title {
+  font-size: 32px;
+  color: #ffffff;
+  font-family: "TT-Bold";
+  margin-bottom: 20px;
+}
+
+.tab-pane_text {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.services_caption {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  img {
+    margin-left: 5px;
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.services_items {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+}
+
+.services_item {
+  width: 30%;
+  text-decoration: none;
+}
+
+.services_img_box {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  background: #ffffff;
+  border-radius: 25px;
+  display: inline-block;
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.services_item_title {
+  font-size: 24px;
+  color: #24a3ff;
+  margin: 20px 0 15px;
+  min-height: 66px;
+}
+
+.services_item_text {
+  color: #ffffff;
+}

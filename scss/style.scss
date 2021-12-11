@@ -1,0 +1,106 @@
+@import "base/fonts";
+@import "base/bootstrap";
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  font-family: "TT-Regular";
+}
+
+.title {
+  font-size: 42px;
+  background: linear-gradient(45deg, #f0145a 0%, #ef8080 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "TT-Bold";
+  line-height: 1.15;
+}
+
+.caption {
+  font-size: 14px;
+  font-family: "TT-Bold";
+  color: #24a3ff;
+  text-transform: uppercase;
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  &:hover {
+    color: #24a3ff;
+  }
+}
+
+.slider_pagination {
+  bottom: -35px;
+  margin-bottom: 0;
+  .slider_pagination_btn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #24a3ff;
+    opacity: 0.2;
+    border: none;
+    margin: 0 5px;
+  }
+
+  .slider_pagination_btn.active {
+    background: #0085ff;
+    opacity: 1;
+  }
+}
+
+.btn {
+  width: 250px;
+  padding: 15px 0;
+  background: #24a3ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "TT-Bold";
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  transition: 0.3s;
+  &:active {
+    transform: scale(0.97);
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.team-member-page,
+.team-page {
+  .footer {
+    border-radius: 12px 0 0 12px;
+  }
+}
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/services";
+@import "blocks/commerce";
+@import "blocks/team";
+@import "blocks/clients";
+@import "blocks/case";
+@import "blocks/publications";
+@import "blocks/publication_gdpr";
+@import "blocks/about";
+@import "blocks/quality";
+@import "blocks/achievements";
+@import "blocks/footer";
+@import "blocks/forms";
+@import "blocks/contacts";
+@import "blocks/contact-popup";
+
+@import "media/media";

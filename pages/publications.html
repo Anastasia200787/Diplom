@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <title>Publications Page</title>
+  </head>
+  <body class="publications_page">
+    <header class="header header_white">
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="header_left">
+            <a href="../index.html" class="logo"
+              ><img src="../icons/logo_black.svg" alt="logo"
+            /></a>
+            <ul class="breadcrumbs">
+              <li><a href="">публікації</a></li>
+            </ul>
+          </div>
+          <div class="header_info">
+            <div class="header_contacts">
+              <div class="header_lang">
+                <a class="active" href="">УК</a>
+                <a href="">РУ</a>
+                <a href="">EN</a>
+              </div>
+              <address class="header_address">
+                Одеса, Адміральський пр., 3
+              </address>
+              <a href="tel:+380503901591" class="header_tel"
+                >+38 (050) 390 15 91</a
+              >
+              <a href="" class="header_social"
+                ><img src="../icons/header/facebook_grey.svg" alt=""
+              /></a>
+            </div>
+            <nav class="menu">
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="about.html" class="menu_link">о нас</a>
+                </li>
+                <li class="menu_item">
+                  <a href="services.html" class="menu_link">послуги</a>
+                </li>
+                <li class="menu_item">
+                  <a href="team.html" class="menu_link">команда</a>
+                </li>
+                <li class="menu_item">
+                  <a href="publications.html" class="menu_link active"
+                    >публікації</a
+                  >
+                </li>
+                <li class="menu_item">
+                  <a href="contacts.html" class="menu_link">контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header_wrapper_mobile">
+          <div class="header_contacts">
+            <div class="header_lang">
+              <a class="active" href="">УК</a>
+              <a href="">РУ</a>
+              <a href="">EN</a>
+            </div>
+            <div class="header_contacts_wrapper">
+              <address class="header_address">
+                Одеса, Адміральський пр., 3
+              </address>
+              <a href="tel:+380503901591" class="header_tel"
+                >+38 (050) 390 15 91</a
+              >
+              <a href="" class="header_social"
+                ><img src="../icons/header/facebook_grey.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="header_bottom_mobile">
+            <div class="header_left">
+              <a href="../index.html" class="logo"
+                ><img src="../icons/logo_black.svg" alt="logo"
+              /></a>
+              <ul class="breadcrumbs">
+                <li><a href="">публікації</a></li>
+              </ul>
+            </div>
+            <button
+              class="navbar-toggler burger"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header burger_menu_header">
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link buger_menu_link" href="about.html"
+                      >о нас</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">послуги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="team.html">команда</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="publications.html">публікації</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">контакти</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="menu">
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="about.html" class="menu_link">о нас</a>
+                </li>
+                <li class="menu_item">
+                  <a href="services.html" class="menu_link">послуги</a>
+                </li>
+                <li class="menu_item">
+                  <a href="team.html" class="menu_link">команда</a>
+                </li>
+                <li class="menu_item">
+                  <a href="publications.html" class="menu_link active"
+                    >публікації</a
+                  >
+                </li>
+                <li class="menu_item">
+                  <a href="contacts.html" class="menu_link">контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="publications">
+        <div class="container">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                новини
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                компанія
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="publications_items">
+                <div>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Валютний контроль помер, хай живе валютний контроль!
+                      </h2>
+                      <span class="publication_item_date">14 червня</span>
+                      <p class="publication_item_text">
+                        Експерти проводять конференції, круглі столи та іншого
+                        штибу заходи на тему «лібералізація валютного
+                        законодавства». Юристи-експерти-новелісти стирають
+                        пальці об «ctrl+c/ctrl+v».
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img4.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">Заповіт міленіала</h2>
+                      <span class="publication_item_date">19 серпня</span>
+                      <p class="publication_item_text">
+                        Що і як передаватимуть у спадщину сучасні влогери,
+                        опініон лідери та кріптомільйонери
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Валютний контроль помер, хай живе валютний контроль!
+                      </h2>
+                      <span class="publication_item_date">14 червня</span>
+                      <p class="publication_item_text">
+                        Експерти проводять конференції, круглі столи та іншого
+                        штибу заходи на тему «лібералізація валютного
+                        законодавства». Юристи-експерти-новелісти стирають
+                        пальці об «ctrl+c/ctrl+v».
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img4.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">Заповіт міленіала</h2>
+                      <span class="publication_item_date">19 серпня</span>
+                      <p class="publication_item_text">
+                        Що і як передаватимуть у спадщину сучасні влогери,
+                        опініон лідери та кріптомільйонери
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img2.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">Equity associate</h2>
+                      <span class="publication_item_date">22 квітня</span>
+                      <p class="publication_item_text">
+                        На проектах я джун. При цьому я співвласник юридичної
+                        фірми. Як це відбулося. Перед вступом батьки мені
+                        казали, що якщо буду…
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img5.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Закон про мови: як зробити свій сайт відповідним
+                      </h2>
+                      <span class="publication_item_date">19 серпня</span>
+                      <p class="publication_item_text">
+                        Наталія Кирик, керівник контент студії Wordfactory.ua
+                        По-перше, це красиво! Це аргумент номер один на користь
+                        україномовного сайту. По-друге, це ефективно. У…
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img2.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">Equity associate</h2>
+                      <span class="publication_item_date">22 квітня</span>
+                      <p class="publication_item_text">
+                        На проектах я джун. При цьому я співвласник юридичної
+                        фірми. Як це відбулося. Перед вступом батьки мені
+                        казали, що якщо буду…
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img5.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Закон про мови: як зробити свій сайт відповідним
+                      </h2>
+                      <span class="publication_item_date">19 серпня</span>
+                      <p class="publication_item_text">
+                        Наталія Кирик, керівник контент студії Wordfactory.ua
+                        По-перше, це красиво! Це аргумент номер один на користь
+                        україномовного сайту. По-друге, це ефективно. У…
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img3.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Штраф для «Корпорації добра»: що буде з Google та іншими
+                        за порушення GDPR
+                      </h2>
+                      <span class="publication_item_date">29 вересня</span>
+                      <p class="publication_item_text">
+                        І чому стягнення у 50 млн євро може стати доленосним
+                        прецедентом За матеріалами Mind.ua 21 січня Національна
+                        комісія із захисту даних.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img6.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Компенсація витрат на навчання дитини в дитячому садку
+                        та школі
+                      </h2>
+                      <span class="publication_item_date">5 Лютого 2018</span>
+                      <p class="publication_item_text">
+                        Про що йде мова В червні цього року Верховна Рада внесла
+                        зміни до Податкового кодексу України. Відтепер батьки,
+                        які отримують офіційну…
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img3.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Штраф для «Корпорації добра»: що буде з Google та іншими
+                        за порушення GDPR
+                      </h2>
+                      <span class="publication_item_date">29 вересня</span>
+                      <p class="publication_item_text">
+                        І чому стягнення у 50 млн євро може стати доленосним
+                        прецедентом За матеріалами Mind.ua 21 січня Національна
+                        комісія із захисту даних.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img6.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Компенсація витрат на навчання дитини в дитячому садку
+                        та школі
+                      </h2>
+                      <span class="publication_item_date">5 Лютого 2018</span>
+                      <p class="publication_item_text">
+                        Про що йде мова В червні цього року Верховна Рада внесла
+                        зміни до Податкового кодексу України. Відтепер батьки,
+                        які отримують офіційну…
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <button class="btn">Ще публікації</button>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="publications_items">
+                <div>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Валютний контроль помер, хай живе валютний контроль!
+                      </h2>
+                      <span class="publication_item_date">14 червня</span>
+                      <p class="publication_item_text">
+                        Експерти проводять конференції, круглі столи та іншого
+                        штибу заходи на тему «лібералізація валютного
+                        законодавства». Юристи-експерти-новелісти стирають
+                        пальці об «ctrl+c/ctrl+v».
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img4.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">Заповіт міленіала</h2>
+                      <span class="publication_item_date">19 серпня</span>
+                      <p class="publication_item_text">
+                        Що і як передаватимуть у спадщину сучасні влогери,
+                        опініон лідери та кріптомільйонери
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img2.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">Equity associate</h2>
+                      <span class="publication_item_date">22 квітня</span>
+                      <p class="publication_item_text">
+                        На проектах я джун. При цьому я співвласник юридичної
+                        фірми. Як це відбулося. Перед вступом батьки мені
+                        казали, що якщо буду…
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img5.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Закон про мови: як зробити свій сайт відповідним
+                      </h2>
+                      <span class="publication_item_date">19 серпня</span>
+                      <p class="publication_item_text">
+                        Наталія Кирик, керівник контент студії Wordfactory.ua
+                        По-перше, це красиво! Це аргумент номер один на користь
+                        україномовного сайту. По-друге, це ефективно. У…
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img3.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Штраф для «Корпорації добра»: що буде з Google та іншими
+                        за порушення GDPR
+                      </h2>
+                      <span class="publication_item_date">29 вересня</span>
+                      <p class="publication_item_text">
+                        І чому стягнення у 50 млн євро може стати доленосним
+                        прецедентом За матеріалами Mind.ua 21 січня Національна
+                        комісія із захисту даних.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="publication_gdpr.html" class="publication_item">
+                    <img
+                      src="../img/publications/page_img6.png"
+                      alt=""
+                      class="publication_item_img"
+                    />
+                    <div class="publication_item_content">
+                      <h2 class="publication_item_title">
+                        Компенсація витрат на навчання дитини в дитячому садку
+                        та школі
+                      </h2>
+                      <span class="publication_item_date">5 Лютого 2018</span>
+                      <p class="publication_item_text">
+                        Про що йде мова В червні цього року Верховна Рада внесла
+                        зміни до Податкового кодексу України. Відтепер батьки,
+                        які отримують офіційну…
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <button class="btn">Ще публікації</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_line"></div>
+        <div class="footer_wrapper">
+          <div class="footer_info">
+            <div class="footer_location">
+              <address class="footer_address">
+                Одеса, Адміральський пр., 3
+              </address>
+              <a href="https://goo.gl/maps/eEBHD7aAAqcPUggZ8" class="footer_map"
+                >Подивитися на мапі</a
+              >
+            </div>
+            <div class="footer_contacts">
+              <a href="" class="footer_social"
+                ><img src="../icons/footer/Facebook.svg" alt=""
+              /></a>
+              <a href="tel:+380503901591" class="footer_tel"
+                >+38 (050) 390 15 91</a
+              >
+              <a href="mailto:contact@hlegals.net" class="footer_mail"
+                >contact@hlegals.net</a
+              >
+            </div>
+          </div>
+          <p class="footer_copy">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
